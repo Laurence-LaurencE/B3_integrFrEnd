@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus_Clash_Esport</title>
+  </head>
+
+  <!-- ___________________________________________ -->
+  <!-- mobile first => tablette => Destop 1-->
+
+  <body>
+    <header>
+      <div class="head">
+        <!-- LOGO -->
+        <div>
+          <img
+            href="logohead"
+            src="./picture/logo.svg"
+            alt="logo blanc, dessin d'une coupe avec uen couronne dessus disposées dans une cercle"
+          />
+          <!-- H1 -->
+          <h1>Nexus Clash</h1>
+        </div>
+        <div class="burger">
+          <!-- BURGER -->
+          <nav class="menu-burger">
+            <button class="burger-toggle">☰</button>
+            <ul class="menu-items">
+              <li><a href="./index.html" class="navaccueil">Accueil</a></li>
+              <li>
+                <a href="./tournois.html" class="navtournois">Tournois</a>
+              </li>
+              <li>
+                <a href="./particip.html" class="navparticip">Participer</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- BANNER -->
+      <div class="banner">
+        <img
+          href="banner960"
+          src="./picture/banner_960.webp"
+          alt="photo d'une coupe de champion avec des flammes oranges, au milieu d'une arêne, de coloris allant du bleu au rouge"
+        />
+        <div>
+          <p class="txbanner">Bienvenue sur Nexus Clash,</p>
+          <p class="txbanner">le coeur battant de l'esport.</p>
+        </div>
+      </div>
+      <!-- INTRO -->
+      <div>
+        <h2>Qu'est-ce que Nexus Clash ?</h2>
+        <div>
+          <p class="txintro1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperîam
+            hîc dignissimos autem moleslias enim quaerat ratione accusamus,
+            debitis id perspiciatis!
+          </p>
+          <p class="txintro2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero est
+            autem recusandae pariatur facere consequatur. Natus minus temporibus
+            velit magnam omnis, voluptatibus quae amet quas nesciunt? Nam
+            aspernatur modi et!
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- __MAIN__ -->
+    <main>
+      <!--Container Prochaine Edition -->
+      <container class="contenedit">
+        <h3 class="prochedition">Prochaine édition</h3>
+        <!-- 5 cards Edition-->
+        <!-- C1-->
+        <div>
+          <img
+            href="cardimg1"
+            src="./picture/fcashprize.jpg"
+            alt="image pieces et billets sur fond noir"
+          />
+          <p>5 000€ de cashprize</p>
+        </div>
+        <!-- C2-->
+        <div>
+          <img
+            href="cardimg2"
+            src="./picture/fjeux.jpg"
+            alt="image abstraite avec des ondulations de couleur dégradée du rose vers le violet et noir"
+          />
+          <p>16 jeux sélectionnés</p>
+        </div>
+        <!-- C3-->
+        <div>
+          <img
+            href="cardimg3"
+            src="./picture/fjoueurs.jpg"
+            alt="image de manettes de jeux videos suspendu à une grille"
+          />
+          <p>128 joueurs participants</p>
+        </div>
+        <!-- C4-->
+        <div>
+          <img
+            href="cardimg4"
+            src="./picture/fspectateur.jpg"
+            alt="image d'un ecran de PC et son clavier sur un bureau, dans les coloris rose, violet, bleu et noir"
+          />
+          <p>50 000 spectateurs</p>
+        </div>
+        <!-- C5-->
+        <div>
+          <img
+            href="cardimg5"
+            src="./picture/fsalle.jpg"
+            alt="image d'une manette + un clavier + un ecran montrant une salle triangulaire, de couleurs blanc, violet, noir"
+          />
+          <div>
+            <p>1 salle</p>
+            <p>4 arènes</p>
+          </div>
+        </div>
+      </container>
+
+      <!-- Container FORMULAIRE -->
+      <!-- ? le mieux ? Container ou Section ? -->
+      <container class="contformul">
+        <h3 class="participaNex">Participer à Nexus Clash</h3>
+        <form action="#" method="post" class="formulaire">
+          <div class="champsformul">
+            <div class="champ">
+              <label for="prenom">Prénom</label>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                placeholder="Votre Prénom"
+                required
+              />
+            </div>
+            <div class="champ">
+              <label for="nom">Nom</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Votre Nom"
+                required
+              />
+            </div>
+            <div class="champ">
+              <label for="pseudo">Pseudonyme</label>
+              <input
+                type="text"
+                id="pseudo"
+                name="pseudo"
+                placeholder="Votre Pseudonyme"
+                required
+              />
+            </div>
+            <div class="champ">
+              <label for="email">Adresse e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jean.dupont@exemple.fr"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <!--checkbox acceptation-->
+            <div class="acceptation">
+              <input type="checkbox" id="accept" name="accept" required />
+              <label for="accept">
+                J'accepte que mes données soient enregistrées, conformément à la
+                <a href="#" target="_blank">politique de confidentialité</a>.
+              </label>
+            </div>
+            <!--button participer-->
+            <button type="submit" class="btn-submit">Participer</button>
+          </div>
+        </form>
+        <!-- <div class="champs"> -->
+        <!-- 4 cards formulaire -->
+        <!-- <div class="champ"> -->
+        <!-- <p class="prenom">Prénom</p> -->
+        <!--champ prenom-->
+        <!-- </div> -->
+        <!-- <div class="champ"> -->
+        <!-- <p class="nom">Nom</p> -->
+        <!--champ nom-->
+        <!-- </div> -->
+        <!-- <div class="champ"> -->
+        <!-- <p class="pseudo">Pseudonyme</p> -->
+        <!--champ pseudo-->
+        <!-- </div> -->
+        <!-- <div class="champ"> -->
+        <!-- <p class="mail">Adresse e-mail</p> -->
+        <!--champ e-mail-->
+        <!-- </div> -->
+        <!-- </div> -->
+
+        <!-- tick à cochet + text -->
+        <!-- <div class="accept">  -->
+        <!-- <p class="accept">
+                J'accepte que mes données soient enregistrer, conformément à la
+                <a href="./" target="_blank">politique de confidentialité</a>.
+            </p>
+            </div> -->
+
+        <!-- ? quelle fonction pour valider ? => JS = prendre infos des champs et enregistrer ds un classeur ? -->
+        <!-- <div class="validparticip"></div> -->
+      </container>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="foot1">
+        <p>
+          <img
+            href="logofoot"
+            src="./picture/logo.svg"
+            alt="logo blanc, dessin d'une coupe avec uen couronne dessus, dans une cercle"
+          />
+        </p>
+        <!-- A revoir =< cliquer sur "Nexus C" pour revenir sur la page d'accueil
+         + utiliser target="_blank" pour renvoi sur un nel onlget ? -->
+        <a href="./index.html" class="nexusfoot">Nexus Clash</a>
+        <!-- ou : -->
+        <p class="nexusfoot">Nexus Clash</p>
+      </div>
+      <div class="foot2">
+        <a href="./#mentionsleg" target="_blank">Mentions légales </a>
+        <a href="./#politiqconf" target="_blank"
+          >Politique de confidentialité</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
