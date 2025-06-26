@@ -1,4 +1,6 @@
 // fichier script.js
 
-// pour le button burger menu
+// le button burger menu est inclus ds le Bootstrap => donc le JS avec
+
+
 

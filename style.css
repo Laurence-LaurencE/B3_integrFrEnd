@@ -65,13 +65,28 @@
     width: fit-content;
     padding:0px;
     margin: 0px;
-   
+    border: 1px solid rgb(33, 33, 32);
+    box-shadow: 0px 2px 2px 0px rgb(44, 43, 43);
+    border-radius: 3px;
 }
 
 .txbanner1, .txbanner2 {
     padding:0px;
     margin: 0px;
+    /* glassmorphisme */
+    background-color:rgba(240, 240, 232, 0.322);
+    backdrop-filter: blur(5px);  /*  le blur ne doit pas être à plus de 50% => transparce = a ds rgba */
+    
 }
+
+.txbanner1{
+    border-radius: 3px 3px 0px 0px;
+}
+    
+.txbanner2{
+    border-radius: 0px 0px 3px 3px;
+}
+
 
 /*__ intro __*/
 .intro {
