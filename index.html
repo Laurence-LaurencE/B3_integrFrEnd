@@ -48,7 +48,7 @@
     ></script>
   </head>
 
-  <body class="bodydiv text-bg-primary p-0 mx-auto">
+  <body class="bodydiv p-0 mx-auto">
     <header class="p-0 mx-auto">
       <!-- LOGO + H1 
       <div class="d-flex align-items-center mb-3">
@@ -90,17 +90,22 @@
             <ul class="navul navbar-nav ms-auto">
               <!-- ms-auto pour mettre aux extremités en auto -->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Accueil</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Tournois</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <!-- <a class="nav-link nav-link-particip" href="#">Participer</a> -->
+                <button class="buttonsubmit">
+                  <a class="nav-link nav-link-particip" href="#">Participer</a>
+                </button>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -189,7 +194,7 @@
       <!-- FORMULAIRE -->
       <div class="form container contformul my-5">
         <h3 class="participaNex">Participer à Nexus Clash</h3>
-        <form action="#" method="post" class="formulaire">
+        <form action="#" method="post" class="formulaire mx-5">
           <div class="row g-3">
             <div class="col-md-6">
               <label for="prenom" class="form-label">Prénom</label>
@@ -243,11 +248,13 @@
             />
             <label class="check form-check-label" for="accept">
               J'accepte que mes données soient enregistrées, conformément à la
-              <a class="politiq" href="#" target="_blank">politique de confidentialité</a>.
+              <a class="politiq" href="#" target="_blank"
+                >politique de confidentialité</a
+              >.
             </label>
           </div>
 
-          <button type="submit" class="buttonsubmit btn mt-3">
+          <button type="submit" class="buttonsubmit btn mt-3 mb-3">
             Participer
           </button>
           <!-- btn-success -->

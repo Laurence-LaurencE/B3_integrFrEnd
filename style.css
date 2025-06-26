@@ -32,7 +32,18 @@
 
 .navspan {
     background-color: #7C4DFF;
-    border-radius: 15%;
+    border-radius: 2px;
+    margin: 0px;
+}
+
+.nav-link {
+    color: white !important;
+    border-radius: 30px;
+}
+
+.nav-link-particip {
+    background-color: #7C4DFF !important;
+
 }
 
 /*__ Banner__ */
@@ -85,12 +96,11 @@ main {
 /*__ SECTION ÉDITION __ */
 .container {
     background-color: #E0E0E0;
-    
 
 }
 
 .prochedition {     /* h3*/
-    color:#4A148C;
+    color:#4A148C !important;
     font-family: 'Orbitron', sans-serif;
     text-align: left;
 }
@@ -99,12 +109,15 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #7C4DFF;
+    color: white;
     height: max-content;
-    border-radius: 0% 0% 8% 8%;
+    /*border-radius: 0px 0px 30px 30px;*/
+    border-bottom-left-radius : 30px; /*10px;*/
+    border-bottom-right-radius : 30px; /*10px;*/
     height: 50px;
-    align-item:;
     font-family: 'Roboto', sans-serif;
     padding: 0%;
+
 }
 
 .containpic {
@@ -113,66 +126,95 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0px;
-    border-radius: 8%;
+    border-radius: 30px;
 
 }
 
 .imgedit {
-    border-radius: 8% 8% 0% 0%;
+    border-radius: 30px 30px 0% 0%;
 }
 
 .picfcashp {
     display: flex;
     flex-direction: column;
-    border-radius: 8%;
+    border-radius: 30px;
 }
 
 .picfjeux {
     display: flex;
     flex-direction: column;
-    border-radius: 15%;
+    border-radius: 30px;
 }
 
 .picfjoueurs {
     display: flex;
     flex-direction: column;
-    border-radius: 15%;
+    border-radius: 30px;
 }
 
 .picfspect {
     display: flex;
     flex-direction: column;
-    border-radius: 15%;
+    border-radius: 30px;
 }
 
 .picfsalle {
     display: flex;
     flex-direction: column;
-    border-radius: 15%;
+    border-radius: 30px;
 }
 
 
 
-.buttonsubmit {
-    background-color:#7C4DFF;
-    color: white;
-    border: none;
-    border-radius: 15%;
-}
 
 /*__ FORMULAIRE__ */
-.form {
-    background-color: #4A148C;
+h3, label {
+    color: white !important;
 }
 
+.form {
+    background-color: #4A148C;
+    border-radius: 3%;                 /* VERIF dim */
+
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    /*margin: ;    -> bootstrap */
+}
+
+.form-label {    /* intitulés des champs*/
+    font-family: 'Roboto', sans-serif;  
+      
+} 
+
+.form-check-input {
+
+}
+
+.form-check {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .check {
     justify-content: center;
-
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 .politiq {
     color: white;
 }
+
+.buttonsubmit {
+    background-color:#7C4DFF !important;
+    color: white !important;
+    border-radius: 30px;
+}
+
+
 
 /*__ FOOTER __*/
 .footer {
