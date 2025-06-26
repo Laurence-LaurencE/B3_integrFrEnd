@@ -1,241 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS perso -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Polices -->
+    <!-- Font orbiton-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font orbiton-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Nexus_Clash_Esport</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-  <!-- ___________________________________________ -->
-  <!-- mobile first => tablette => Destop 1-->
+  <body class="bodydiv text-bg-primary p-0 mx-auto">
+    <header class="p-0 mx-auto">
+      <!-- LOGO + H1 
+      <div class="d-flex align-items-center mb-3">
+        <img
+          src="./picture/logo.svg"
+          alt="logo Nexus Clash"
+          title="logo Nexus Clash"
+          class="me-2"
+        />
+        <h1>Nexus Clash</h1>
+      </div> -->
 
-  <body>
-    <header>
-      <div class="head">
-        <!-- LOGO -->
-        <div>
-          <img
-            href="logohead"
-            src="./picture/logo.svg"
-            alt="logo blanc, dessin d'une coupe avec uen couronne dessus disposées dans une cercle"
-          />
-          <!-- H1 -->
-          <h1>Nexus Clash</h1>
-        </div>
-        <div class="burger">
-          <!-- BURGER -->
-          <nav class="menu-burger">
-            <button class="burger-toggle">☰</button>
-            <ul class="menu-items">
-              <li><a href="./index.html" class="navaccueil">Accueil</a></li>
-              <li>
-                <a href="./tournois.html" class="navtournois">Tournois</a>
+      <!-- NAVBAR OFFCANVAS -->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary p-0 mx-auto d-flex justify-content-evenly"
+      >
+        <div class="navstyl d-flex justify-content-evenly px-auto">
+          <!-- container-fluid d-flex justify-content-evenly  // avec px-5 pas nok en mobile -->
+          <a class="alogo navbar-brand text-light" href="#"
+            ><img
+              class="logo"
+              src="./picture/logo5050px.svg"
+              alt="logo blanc, dessin d'une coupe avec une couronne dessus disposées dans une cercle"
+              title="Nexus Clash"
+            />Nexus Clash</a
+          >
+          <button
+            class="navbutton navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navspan navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navul navbar-nav ms-auto">
+              <!-- ms-auto pour mettre aux extremités en auto -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li>
-                <a href="./particip.html" class="navparticip">Participer</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
-      <!-- BANNER -->
-      <div class="banner">
+      </nav>
+      <!-- BANNIÈRE -->
+      <div
+        class="banner d-flex justify-content-center py-auto mx-auto position-relative"
+      >
         <img
-          href="banner960"
-          src="./picture/banner_960.webp"
-          alt="photo d'une coupe de champion avec des flammes oranges, au milieu d'une arêne, de coloris allant du bleu au rouge"
+          src="./picture/banner_1920.webp"
+          alt="photo d'une coupe de champion"
+          class="img-fluid"
         />
-        <div>
-          <p class="txbanner">Bienvenue sur Nexus Clash,</p>
-          <p class="txbanner">le coeur battant de l'esport.</p>
+        <div class="textbanner">
+          <p class="txbanner1">Bienvenue sur Nexus Clash,</p>
+          <p class="txbanner2">le coeur battant de l'esport.</p>
         </div>
       </div>
+
       <!-- INTRO -->
-      <div>
-        <h2>Qu'est-ce que Nexus Clash ?</h2>
-        <div>
-          <p class="txintro1">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperîam
-            hîc dignissimos autem moleslias enim quaerat ratione accusamus,
-            debitis id perspiciatis!
-          </p>
-          <p class="txintro2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero est
-            autem recusandae pariatur facere consequatur. Natus minus temporibus
-            velit magnam omnis, voluptatibus quae amet quas nesciunt? Nam
-            aspernatur modi et!
-          </p>
-        </div>
+      <div class="intro mt-0">
+        <h1 class="text-center">Qu'est-ce que Nexus Clash ?</h1>
+        <p class="txintro1 text-center">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperîam hîc
+          dignissimos autem moleslias enim quaerat ratione accusamus, debitis id
+          perspiciatis!
+        </p>
+        <p class="txintro2 text-center">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero est
+          autem recusandae pariatur facere consequatur. Natus minus temporibus
+          vitae repellat omnis, voluptatibus quae amet quas nesciunt? Nam
+          aspernatur modi et!
+        </p>
       </div>
     </header>
 
-    <!-- __MAIN__ -->
     <main>
-      <!--Container Prochaine Edition -->
-      <container class="contenedit">
-        <h3 class="prochedition">Prochaine édition</h3>
-        <!-- 5 cards Edition-->
-        <!-- C1-->
-        <div>
-          <img
-            href="cardimg1"
-            src="./picture/fcashprize.jpg"
-            alt="image pieces et billets sur fond noir"
-          />
-          <p>5 000€ de cashprize</p>
-        </div>
-        <!-- C2-->
-        <div>
-          <img
-            href="cardimg2"
-            src="./picture/fjeux.jpg"
-            alt="image abstraite avec des ondulations de couleur dégradée du rose vers le violet et noir"
-          />
-          <p>16 jeux sélectionnés</p>
-        </div>
-        <!-- C3-->
-        <div>
-          <img
-            href="cardimg3"
-            src="./picture/fjoueurs.jpg"
-            alt="image de manettes de jeux videos suspendu à une grille"
-          />
-          <p>128 joueurs participants</p>
-        </div>
-        <!-- C4-->
-        <div>
-          <img
-            href="cardimg4"
-            src="./picture/fspectateur.jpg"
-            alt="image d'un ecran de PC et son clavier sur un bureau, dans les coloris rose, violet, bleu et noir"
-          />
-          <p>50 000 spectateurs</p>
-        </div>
-        <!-- C5-->
-        <div>
-          <img
-            href="cardimg5"
-            src="./picture/fsalle.jpg"
-            alt="image d'une manette + un clavier + un ecran montrant une salle triangulaire, de couleurs blanc, violet, noir"
-          />
-          <div>
-            <p>1 salle</p>
-            <p>4 arènes</p>
+      <!-- SECTION ÉDITION -->
+      <div class="container contenedit my-5 text-center">
+        <h3 class="prochedition fs-1">Prochaine édition</h3>
+
+        <div class="containpic row row-cols-1 row-cols-md-3 g-lg-4">
+          <div class="picfcashp col">
+            <img
+              src="./picture/fcashprize 2.jpg"
+              class="imgedit img-fluid"
+              alt="cashprize"
+            />
+            <p class="paragraphedition">5 000€ de cashprize</p>
+          </div>
+          <div class="picfjeux col">
+            <img
+              src="./picture/fjeux 2.jpg"
+              class="imgedit img-fluid"
+              alt="jeux"
+            />
+            <p class="paragraphedition">16 jeux sélectionnés</p>
+          </div>
+          <div class="picfjoueurs col">
+            <img
+              src="./picture/fjoueurs 2.jpg"
+              class="imgedit img-fluid"
+              alt="joueurs"
+            />
+            <p class="paragraphedition">128 joueurs participants</p>
+          </div>
+          <div class="picfspect col">
+            <img
+              src="./picture/fspectateur 2.png"
+              class="imgedit img-fluid"
+              alt="spectateurs"
+            />
+            <p class="paragraphedition">50 000 spectateurs</p>
+          </div>
+          <div class="picfsalle col">
+            <img
+              src="./picture/fsalle 2.jpg"
+              class="imgedit img-fluid"
+              alt="salle"
+            />
+            <p class="paragraphedition">1 salle & 4 arènes</p>
           </div>
         </div>
-      </container>
+      </div>
 
-      <!-- Container FORMULAIRE -->
-      <!-- ? le mieux ? Container ou Section ? -->
-      <container class="contformul">
+      <!-- FORMULAIRE -->
+      <div class="form container contformul my-5">
         <h3 class="participaNex">Participer à Nexus Clash</h3>
         <form action="#" method="post" class="formulaire">
-          <div class="champsformul">
-            <div class="champ">
-              <label for="prenom">Prénom</label>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="prenom" class="form-label">Prénom</label>
               <input
                 type="text"
                 id="prenom"
                 name="prenom"
-                placeholder="Votre Prénom"
+                class="form-control"
                 required
               />
             </div>
-            <div class="champ">
-              <label for="nom">Nom</label>
+            <div class="col-md-6">
+              <label for="nom" class="form-label">Nom</label>
               <input
                 type="text"
                 id="nom"
                 name="nom"
-                placeholder="Votre Nom"
+                class="form-control"
                 required
               />
             </div>
-            <div class="champ">
-              <label for="pseudo">Pseudonyme</label>
+            <div class="col-md-6">
+              <label for="pseudo" class="form-label">Pseudonyme</label>
               <input
                 type="text"
                 id="pseudo"
                 name="pseudo"
-                placeholder="Votre Pseudonyme"
+                class="form-control"
                 required
               />
             </div>
-            <div class="champ">
-              <label for="email">Adresse e-mail</label>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Adresse e-mail</label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="jean.dupont@exemple.fr"
+                class="form-control"
                 required
               />
             </div>
           </div>
-          <div>
-            <!--checkbox acceptation-->
-            <div class="acceptation">
-              <input type="checkbox" id="accept" name="accept" required />
-              <label for="accept">
-                J'accepte que mes données soient enregistrées, conformément à la
-                <a href="#" target="_blank">politique de confidentialité</a>.
-              </label>
-            </div>
-            <!--button participer-->
-            <button type="submit" class="btn-submit">Participer</button>
+
+          <div class="form-check mt-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="accept"
+              name="accept"
+              required
+            />
+            <label class="check form-check-label" for="accept">
+              J'accepte que mes données soient enregistrées, conformément à la
+              <a class="politiq" href="#" target="_blank">politique de confidentialité</a>.
+            </label>
           </div>
+
+          <button type="submit" class="buttonsubmit btn mt-3">
+            Participer
+          </button>
+          <!-- btn-success -->
         </form>
-        <!-- <div class="champs"> -->
-        <!-- 4 cards formulaire -->
-        <!-- <div class="champ"> -->
-        <!-- <p class="prenom">Prénom</p> -->
-        <!--champ prenom-->
-        <!-- </div> -->
-        <!-- <div class="champ"> -->
-        <!-- <p class="nom">Nom</p> -->
-        <!--champ nom-->
-        <!-- </div> -->
-        <!-- <div class="champ"> -->
-        <!-- <p class="pseudo">Pseudonyme</p> -->
-        <!--champ pseudo-->
-        <!-- </div> -->
-        <!-- <div class="champ"> -->
-        <!-- <p class="mail">Adresse e-mail</p> -->
-        <!--champ e-mail-->
-        <!-- </div> -->
-        <!-- </div> -->
-
-        <!-- tick à cochet + text -->
-        <!-- <div class="accept">  -->
-        <!-- <p class="accept">
-                J'accepte que mes données soient enregistrer, conformément à la
-                <a href="./" target="_blank">politique de confidentialité</a>.
-            </p>
-            </div> -->
-
-        <!-- ? quelle fonction pour valider ? => JS = prendre infos des champs et enregistrer ds un classeur ? -->
-        <!-- <div class="validparticip"></div> -->
-      </container>
-    </main>
-    <!-- Footer -->
-    <footer>
-      <div class="foot1">
-        <p>
-          <img
-            href="logofoot"
-            src="./picture/logo.svg"
-            alt="logo blanc, dessin d'une coupe avec uen couronne dessus, dans une cercle"
-          />
-        </p>
-        <!-- A revoir =< cliquer sur "Nexus C" pour revenir sur la page d'accueil
-         + utiliser target="_blank" pour renvoi sur un nel onlget ? -->
-        <a href="./index.html" class="nexusfoot">Nexus Clash</a>
-        <!-- ou : -->
-        <p class="nexusfoot">Nexus Clash</p>
       </div>
-      <div class="foot2">
-        <a href="./#mentionsleg" target="_blank">Mentions légales </a>
-        <a href="./#politiqconf" target="_blank"
+    </main>
+
+    <!-- FOOTER  bg-dark-->
+    <footer class="footer text-white text-center p-4 mt-5">
+      <a class="alogo navbar-brand text-light" href="#"
+        ><img
+          class="logo"
+          src="./picture/logo5050px.svg"
+          alt="logo blanc, dessin d'une coupe avec une couronne dessus disposées dans une cercle"
+          title="Nexus Clash"
+        />
+        Nexus Clash</a
+      >
+      <!-- <div class="foot1">
+        <img src="./picture/logo.svg" alt="logo Nexus" width="40" />
+        <p class="nexusfoot">Nexus Clash</p>
+      </div> -->
+      <div class="foot2 mt-3">
+        <a href="./#mentionsleg" class="text-white me-3" target="_blank"
+          >Mentions légales</a
+        >
+        <a href="./#politiqconf" class="text-white" target="_blank"
           >Politique de confidentialité</a
         >
       </div>

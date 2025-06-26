@@ -1,0 +1,196 @@
+.bodydiv {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    gap: 0%;
+    background-color: #E0E0E0;
+}
+
+.header {
+    
+}
+/*___NAVBAR Burger___*/
+
+.navstyl {
+    background-color: #4A148C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.alogo {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    /*weight:*/
+}
+
+.navspan {
+    background-color: #7C4DFF;
+    border-radius: 15%;
+}
+
+/*__ Banner__ */
+.textbanner {
+    position: absolute; /* q text se positionne où je veux s/banner */
+    bottom: 5%;  /* placé en bas à 5% */
+    left: 5%;
+    z-index: 2; /* s’assure que le texte est devant l’image.*/
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.1rem;
+    font: size 10px;
+    font-weight: bolder;
+    text-wrap-mode:wrap;
+    line: height 0px;
+    width: fit-content;
+    padding:0px;
+    margin: 0px;
+   
+}
+
+.txbanner1, .txbanner2 {
+    padding:0px;
+    margin: 0px;
+}
+
+/*__ intro __*/
+.intro {
+    background-color: #E0E0E0;
+    color:#4A148C;
+}
+
+h1{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin-inline: 15%;
+    text-wrap-mode:wrap;
+}
+
+.txintro1, .txintro2 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+main {
+    background-color: #E0E0E0;
+}
+
+/*__ SECTION ÉDITION __ */
+.container {
+    background-color: #E0E0E0;
+    
+
+}
+
+.prochedition {     /* h3*/
+    color:#4A148C;
+    font-family: 'Orbitron', sans-serif;
+    text-align: left;
+}
+.paragraphedition {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #7C4DFF;
+    height: max-content;
+    border-radius: 0% 0% 8% 8%;
+    height: 50px;
+    align-item:;
+    font-family: 'Roboto', sans-serif;
+    padding: 0%;
+}
+
+.containpic {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+    border-radius: 8%;
+
+}
+
+.imgedit {
+    border-radius: 8% 8% 0% 0%;
+}
+
+.picfcashp {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8%;
+}
+
+.picfjeux {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15%;
+}
+
+.picfjoueurs {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15%;
+}
+
+.picfspect {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15%;
+}
+
+.picfsalle {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15%;
+}
+
+
+
+.buttonsubmit {
+    background-color:#7C4DFF;
+    color: white;
+    border: none;
+    border-radius: 15%;
+}
+
+/*__ FORMULAIRE__ */
+.form {
+    background-color: #4A148C;
+}
+
+.check {
+    justify-content: center;
+
+}
+
+.politiq {
+    color: white;
+}
+
+/*__ FOOTER __*/
+.footer {
+    background-color: #4A148C;
+}
+
+.foot2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*_________________________________________________________*/
+/* Responsive
+@media (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 1025px) and (max-width: 1439px) {}
+@media (min-width: 1440px) and (max-width: 1919px) {}
+*/
+/*_________________________________________________________*/
+
+
+/* @include pour réusiliser un bout de code */
