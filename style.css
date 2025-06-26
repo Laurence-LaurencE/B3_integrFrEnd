@@ -55,10 +55,13 @@
     color: white;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 0.1rem;
-    font: size 10px;
+    font-size: 10px;
     font-weight: bolder;
     text-wrap-mode:wrap;
-    line: height 0px;
+
+    /*height: 0px;*/
+    /*line: height 0px;*/
+
     width: fit-content;
     padding:0px;
     margin: 0px;
@@ -168,13 +171,15 @@ main {
 
 
 /*__ FORMULAIRE__ */
+
+
 h3, label {
     color: white !important;
 }
 
 .form {
     background-color: #4A148C;
-    border-radius: 3%;                 /* VERIF dim */
+    border-radius: 30px;                 /* VERIF dim */
 
 }
 
